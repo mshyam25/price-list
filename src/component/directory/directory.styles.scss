@@ -13,7 +13,7 @@
     .directory{
     display: flex;
     flex-direction: column;
-    
+    transition: flex-direction 3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
 }
