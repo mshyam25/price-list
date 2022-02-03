@@ -1,8 +1,8 @@
 
 @mixin fade {
 
-    opacity:0.5;
-    font-weight: lighter;
+    opacity:0.3;
+    font-weight: bold;
     
 }
 .price-card{
@@ -58,5 +58,15 @@
         width: 100%;
         height: 10%;
         
+    }
+
+    &:hover{
+        cursor:pointer;
+        transform: scale(1.06);
+        transition: transform 3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    }
+
+    &.button{
+        opacity: 1;
     }
 }
