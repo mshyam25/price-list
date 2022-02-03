@@ -1,0 +1,62 @@
+
+@mixin fade {
+
+    opacity:0.5;
+    font-weight: lighter;
+    
+}
+.price-card{
+
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    height:460px;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    
+
+    .header{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid 1px black;
+        margin: 5px;
+
+        .subscript
+        {
+            font-size: 12px;
+        }
+    }
+
+    .body{
+
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        line-height: 30px;
+
+        .body-text{
+            font-size: 16px;
+            color: black;
+            
+
+            &.fade{
+                @include fade()
+            }
+        }
+    }
+
+    .footer
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+        height: 10%;
+        
+    }
+}
